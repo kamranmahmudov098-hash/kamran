@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>TABLE Tapşırığ Cədvəllər</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      margin: 20px
+    }
+    table{
+      border-collapse: collapse;
+      margin: 30px auto;
+      text-align: center
+    }
+    th, td{
+      border: 2px solid black;
+      padding: 8px 15px
+    }
+    th{background: #f2f2f2}
+    caption {font-weight: bold;margin-bottom: 10px}
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <th>Ad</th>
+      <th>Yaş</th>
+      <th>Ölkə</th>
+    </tr>
+    <tr><td>Kamran Mahmudov</td><td>28</td><td>Azərbaycan</td></tr>
+    <tr><td>Rahib Mahmudov</td><td>35</td><td>Azərbaycan</td></tr>
+    <tr><td>Aslan Mahmudov</td><td>19</td><td>Azərbaycan</td></tr>
+  </table>
+
+  <table>
+    <caption>Məhsul Məlumatı</caption>
+    <tr>
+      <th>Məhsul</th>
+      <th>Dadlar</th>
+    </tr>
+    <tr>
+      <td rowspan="3">Süd</td>
+      <td>Badəm</td>
+    </tr>
+    <tr><td>Manqo</td></tr>
+    <tr><td>Şokolad</td></tr>
+    <tr>
+      <td colspan="2">Bunlar eksklüziv dadlardır</td>
+    </tr>
+  </table>
+
+  <table border="1">
+    <caption><i>Birləşmiş xanalarla test cədvəli</i></caption>
+    <tr>
+      <td rowspan="2"></td>
+      <th colspan="2">Ortalama</th>
+      <th rowspan="2">Qırmızı</th>
+    </tr>
+    <tr>
+      <th>Boy</th>
+      <th>Çəki</th>
+    </tr>
+    <tr>
+      <td>Kişilər</td><td>1.9</td><td>0.003</td><td>40%</td>
+    </tr>
+    <tr>
+      <td>Qadınlar</td><td>1.7</td><td>0.002</td><td>43%</td>
+    </tr>
+  </table>
+
+  <table>
+    <tr><th>Məhsul</th><th>Miqdar</th></tr>
+    <tr><td>Kərə yağı</td><td>3 Kiloqram</td></tr>
+    <tr><td>Süd</td><td>3 Litr</td></tr>
+  </table>
+
+  <table>
+    <tr>
+      <td rowspan="3">bölmə</td>
+      <td>Alt Bölmə 1</td>
+      <td>Mətn1</td>
+    </tr>
+    <tr><td>alt bölmə 1</td><td>mətn2</td></tr>
+    <tr><td>alt bölmə 1</td><td>mətn3</td></tr>
+    <tr><td>alt bölmə 2</td><td colspan="2">mətn</td></tr>
+    <tr><td>alt bölmə 3</td><td colspan="2">mətn</td></tr>
+  </table>
+
+  <table>
+    <tr><th>ID</th><th>Ad</th><th>Fənn</th><th>Qiymət</th></tr>
+    <tr><td rowspan="3">1</td><td rowspan="3">Kamran</td><td>Riyaziyyat</td><td>80</td></tr>
+    <tr><td>Fizika</td><td>90</td></tr>
+    <tr><td>Kompüterlər</td><td>70</td></tr>
+    <tr><td rowspan="3">2</td><td rowspan="3">Rahib</td><td>Riyaziyyat</td><td>80</td></tr>
+    <tr><td>Fizika</td><td>70</td></tr>
+    <tr><td>Kompüterlər</td><td>90</td></tr>
+  </table>
+
+  <table border="4" style="border-color:teal;">
+    <caption>Məhsul</caption>
+    <tr><th>No</th><th>Məhsulun Adı</th><th>Miqdar</th></tr>
+    <tr><td>1</td><td>Qələm</td><td></td></tr>
+    <tr><td>2</td><td>Kitab</td><td>50</td></tr>
+    <tr><td>3</td><td>Torpaq</td><td></td></tr>
+  </table>
+
+  <table border="2" style="border-color:green;">
+    <caption>HTML-də Cədvəl</caption>
+    <tr>
+      <td>A</td><td>B</td><td></td><td>E</td><td>F</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C</td><td>D</td><td rowspan="2">G</td><td>H</td><td>I</td>
+    </tr>
+    <tr><td rowspan="2">J</td><td rowspan="2">K</td><td>L</td><td>M</td></tr>
+  </table>
+
+  <table border="1">
+    <caption><b>DƏRS CƏDVƏLİ</b></caption>
+    <tr>
+      <th>Gün/Dərs</th>
+      <th>I<br>9:30-10:20</th>
+      <th>II<br>10:20-11:10</th>
+      <th>III<br>11:10-12:00</th>
+      <th>12:00-12:40</th>
+      <th>IV<br>12:40-1:30</th>
+      <th>V<br>1:30-2:20</th>
+      <th>VI<br>2:20-3:10</th>
+      <th>VII<br>3:10-4:00</th>
+    </tr>
+    <tr><td>Bazar ertəsi</td><td>İng</td><td>Riy</td><td>Kim</td><td rowspan="6">NAHAR</td><td colspan="3">LAB</td><td>Fiz</td></tr>
+    <tr><td>Çərşənbə axşamı</td><td colspan="3">LAB</td><td>İng</td><td>Kim</td><td>Riy</td><td>İDMAN</td></tr>
+    <tr><td>Çərşənbə</td><td>Riy</td><td>Fiz</td><td>İng</td><td>Kim</td><td colspan="2">KİTABXANA</td><td></td></tr>
+    <tr><td>Cümə axşamı</td><td>Fiz</td><td>İng</td><td>Kim</td><td colspan="3">LAB</td><td>Riy</td></tr>
+    <tr><td>Cümə</td><td colspan="3">LAB</td><td>Riy</td><td>Kim</td><td>İng</td><td>Fiz</td></tr>
+    <tr><td>Şənbə</td><td>İng</td><td>Kim</td><td>Riy</td><td colspan="3">SEMINAR</td><td>İDMAN</td></tr>
+  </table>
+
+</body>
+</html>
